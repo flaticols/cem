@@ -39,11 +39,6 @@ deno add jsr:@flaticols/cem
 
 ## CLI Usage
 
-```bash
-# After installation
-cem-generator src/**/*.ts
-```
-
 ### Options
 
 | Option | Description |
@@ -57,13 +52,13 @@ cem-generator src/**/*.ts
 
 ```bash
 # Pretty print to custom file
-cem-generator -o manifest.json -p src/**/*.ts
+npx @flaticols/cem -o manifest.json -p src/**/*.ts
 
 # Custom base path (paths in manifest will be relative to src/)
-cem-generator -b src -o manifest.json src/**/*.ts
+npx @flaticols/cem -b src -o manifest.json src/**/*.ts
 
 # Output to stdout
-cem-generator -o - src/**/*.ts
+npx @flaticols/cem -o - src/**/*.ts
 ```
 
 ## Programmatic Usage

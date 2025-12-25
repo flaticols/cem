@@ -23,7 +23,7 @@ const HELP_TEXT = `
 Custom Elements Manifest Generator
 
 Usage:
-  cem-generator [options] <files...>
+  cem [options] <files...>
 
 Options:
   -o, --output <file>    Output file (default: custom-elements.json)
