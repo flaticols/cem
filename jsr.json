@@ -2,7 +2,10 @@
   "$schema": "https://jsr.io/schema/config-file.v1.json",
   "name": "@flaticols/cem",
   "version": "0.0.2",
-  "exports": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./cli": "./cli.ts"
+  },
   "imports": {
     "typescript": "npm:typescript@^5.0.0"
   },
