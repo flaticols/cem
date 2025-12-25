@@ -1,0 +1,20 @@
+{
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "name": "@flaticols/cem",
+  "version": "0.0.1",
+  "exports": "./index.ts",
+  "publish": {
+    "include": [
+      "index.ts",
+      "types.ts",
+      "analyzer.ts",
+      "jsdoc.ts",
+      "inheritance.ts",
+      "runtime.ts",
+      "cli.ts",
+      "LICENSE",
+      "README.md"
+    ],
+    "exclude": ["testdata", "node_modules", "*.json", "!jsr.json", "!package.json"]
+  }
+}

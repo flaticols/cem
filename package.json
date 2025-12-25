@@ -1,0 +1,60 @@
+{
+  "name": "@flaticols/cem",
+  "version": "0.0.1",
+  "description": "Custom Elements Manifest generator using TypeScript compiler API with full inheritance support",
+  "type": "module",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "types": "./index.ts"
+    }
+  },
+  "bin": {
+    "cem-generator": "./cli.ts"
+  },
+  "files": [
+    "index.ts",
+    "types.ts",
+    "analyzer.ts",
+    "jsdoc.ts",
+    "inheritance.ts",
+    "runtime.ts",
+    "cli.ts"
+  ],
+  "scripts": {
+    "generate": "bun run cli.ts",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
+  },
+  "keywords": [
+    "custom-elements",
+    "web-components",
+    "manifest",
+    "cem",
+    "typescript",
+    "analyzer",
+    "jsdoc",
+    "documentation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.10",
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}
