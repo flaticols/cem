@@ -11,14 +11,27 @@ Custom Elements Manifest generator using TypeScript compiler API with full class
 - **Decorator support** - Recognizes `@customElement()` and `@property()` decorators
 - **CEM v2.1.0 compliant** - Outputs valid Custom Elements Manifest
 
+## Quick Start (no install)
+
+```bash
+# npx (Node.js)
+npx @flaticols/cem src/**/*.ts
+
+# bunx (Bun)
+bunx @flaticols/cem src/**/*.ts
+
+# Deno
+deno run --allow-read --allow-write --allow-env jsr:@flaticols/cem/cli src/**/*.ts
+```
+
 ## Installation
 
 ```bash
-# Bun
-bun add @flaticols/cem
-
 # npm
 npm install @flaticols/cem
+
+# Bun
+bun add @flaticols/cem
 
 # JSR (Deno)
 deno add jsr:@flaticols/cem
@@ -27,14 +40,8 @@ deno add jsr:@flaticols/cem
 ## CLI Usage
 
 ```bash
-# Bun
-bun run cem-generator src/**/*.ts
-
-# Node.js (v22.6+)
-npx cem-generator src/**/*.ts
-
-# Deno
-deno run --allow-read --allow-write --allow-env jsr:@flaticols/cem/cli src/**/*.ts
+# After installation
+cem-generator src/**/*.ts
 ```
 
 ### Options
