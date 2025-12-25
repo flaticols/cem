@@ -1,6 +1,6 @@
 {
   "name": "@flaticols/cem",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Custom Elements Manifest generator using TypeScript compiler API with full inheritance support",
   "type": "module",
   "main": "./index.ts",
