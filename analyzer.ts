@@ -71,6 +71,7 @@ export class Analyzer {
 			module: ts.ModuleKind.ESNext,
 			allowJs: true,
 			checkJs: true,
+			experimentalDecorators: true,
 		});
 	}
 
@@ -245,7 +246,7 @@ export class Analyzer {
 		sourceFile: ts.SourceFile,
 	): void {
 		const name = this.getPropertyName(node.name);
-		if (!name) return;
+		if (!name || name.startsWith("#")) return;
 
 		const jsDoc = getJSDoc(node, sourceFile);
 
@@ -294,7 +295,7 @@ export class Analyzer {
 		sourceFile: ts.SourceFile,
 	): void {
 		const name = this.getPropertyName(node.name);
-		if (!name) return;
+		if (!name || name.startsWith("#")) return;
 
 		const jsDoc = getJSDoc(node, sourceFile);
 
