@@ -1,6 +1,6 @@
 {
   "name": "@flaticols/cem",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom Elements Manifest generator using TypeScript compiler API with full inheritance support",
   "type": "module",
   "main": "./index.ts",
@@ -40,7 +40,7 @@
     "jsdoc",
     "documentation"
   ],
-  "author": "",
+  "author": "Denis Panfilov",
   "license": "MIT",
   "repository": {
     "type": "git",
